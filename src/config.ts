@@ -2,9 +2,10 @@ import type { ThemeConfig } from './types'
 
 export const themeConfig: ThemeConfig = {
   // SITE INFO ///////////////////////////////////////////////////////////////////////////////////////////
+  // Bro chỉnh tên site đi
   site: {
     website: 'https://chiri.the3ash.com/', // Site domain
-    title: 'CHIRI', // Site title
+    title: 'NP', // Site title
     author: '3ASH', // Author name
     description: 'Minimal blog built by Astro', // Site description
     language: 'en-US' // Default language

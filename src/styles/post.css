@@ -26,15 +26,21 @@
 
 /* Headings (h1-h5)
  Adjust size or spacing below if needed. */
-.prose h1,
-.prose h2,
-.prose h3,
-.prose h4,
-.prose h5 {
+
+.prose h1 {
+  font-size: var(--font-size-2xl);
+}
+.prose h2 {
+  font-size: var(--font-size-xl);
+}
+.prose h3 {
+  font-size: var(--font-size-l);
+}
+.prose h4 {
   font-size: var(--font-size-m);
-  font-weight: var(--font-weight-bold);
-  line-height: 1.75;
-  margin: 3.75em 0 1.75em 0;
+}
+.prose h5 {
+  font-size: var(--font-size-s);
 }
 
 /* Bold text */

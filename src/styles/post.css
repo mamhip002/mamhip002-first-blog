@@ -80,6 +80,7 @@
  Adjust size or spacing below if needed. */
 .prose h1 {
   font-size: var(--font-size-2xl);
+  margin-bottom: 1.5rem;
 }
 .prose h2 {
   font-size: var(--font-size-xl);

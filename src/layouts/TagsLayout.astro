@@ -60,7 +60,7 @@ const ogImage = `/open-graph/${postSlug}.png`
                   </div>
                   <div class="tags">
                     {post.data.tags?.map((tag) => (
-                      <span class="tag">{tag}</span>
+                      <a href={`/tags/${tag}`} class="tag">{tag}</a>
                     ))}
                   </div>
                 </div>
@@ -92,9 +92,5 @@ const ogImage = `/open-graph/${postSlug}.png`
 
   .post-container main {
     flex: 1;
-  }
-
-  .prose .title a {
-    margin-bottom: 1rem !important;
   }
 </style>

@@ -7,10 +7,9 @@ This content will be displayed at the top of the index page.
 You can leave this empty if you don’t want to show any content.
 -->
 
-A static blog theme based on [Astro](https://astro.build), designed for clarity and focus.
+<br />
 
-With a deliberately minimal design, this layout ensures your content takes center stage. It's built for flexibility, offering customization options that honor its clean and elegant aesthetic.
+> *"Hãy viết phần giới thiệu trong `about.md`"*<br />
+> -- **kw04**
 
-Effortlessly share your thoughts in _a calm & dustless space._
-
-Check posts for details and view source on [GitHub](https://github.com/the3ash/astro-chiri).
+Chào đằng ấy, đây là trang blog cá nhân, thường dùng để viết nhật ký, ôn lại kiến thức, chia sẽ kinh nghiệm của bản thân

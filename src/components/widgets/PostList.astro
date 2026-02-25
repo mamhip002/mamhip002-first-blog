@@ -6,6 +6,7 @@ import { themeConfig } from '@/config'
 const { posts } = Astro.props as PostListProps
 ---
 
+<span class="title"></span>
 <ul>
   {
     posts.map((post) => (
@@ -49,6 +50,10 @@ const { posts } = Astro.props as PostListProps
     display: block;
     text-decoration: none;
     transition: opacity 0.15s ease-out;
+  }
+
+  span.title {
+    padding: 0.2rem 0rem;
   }
 
   @media (hover: hover) and (pointer: fine) {

@@ -1,0 +1,34 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content'
+import TagsLayout from '@/layouts/TagsLayout.astro'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts')
+  const tagToPostsMap = new Map<string, CollectionEntry<'posts'>[]>()
+
+  posts
+    .filter((post) => !post.id.startsWith('_'))
+    .filter((post) => post.data.tags.length > 0)
+    .forEach((post) => {
+      post.data.tags.forEach((tag: string) => {
+        if (!tagToPostsMap.has(tag)) {
+          tagToPostsMap.set(tag, [])
+        }
+
+        tagToPostsMap.get(tag)!.push(post)
+      })
+    })
+
+  return Array.from(tagToPostsMap).map(([tag, posts]) => ({
+    params: { slug: tag },
+    props: { posts }
+  }))
+}
+
+type Props = CollectionEntry<'posts'>[]
+
+const post = Astro.props
+const { slug } = Astro.params
+---
+
+<TagsLayout {...post} slug={slug} />

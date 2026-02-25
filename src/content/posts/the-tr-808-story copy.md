@@ -1,8 +1,8 @@
 ---
-title: 'Review Film Quỷ Bí Chi Chủ'
-pubDate: '2026-02-25'
-tags: ['review','film','Lord of mystery','markdown']
-dev: false
+title: 'Review Film Test'
+pubDate: '2025-02-25'
+tags: ['review','test', 'dev']
+dev: true
 ---
 
 Quỷ Bí Chi Chủ

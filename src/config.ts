@@ -6,7 +6,7 @@ export const themeConfig: ThemeConfig = {
   site: {
     website: 'https://chiri.the3ash.com/', // Site domain
     title: 'NP', // Site title
-    author: '3ASH', // Author name
+    author: 'NP', // Author name
     description: 'Minimal blog built by Astro', // Site description
     language: 'en-US' // Default language
   },
@@ -30,7 +30,7 @@ export const themeConfig: ThemeConfig = {
 
   // POST SETTINGS ///////////////////////////////////////////////////////////////////////////////////////
   post: {
-    readingTime: false, // Show reading time in posts
+    readingTime: true, // Show reading time in posts
     toc: true, // Show table of contents (when there is enough page width)
     imageViewer: true, // Enable image viewer
     copyCode: true, // Enable copy button in code blocks
